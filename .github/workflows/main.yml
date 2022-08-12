@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo ${{ fromJSON(github.event.registry_package) }}
-      - run: echo ${{ fromJSON(github.event.registry_package.package_version.manifest }}
+      - run: echo ${{ fromJSON(github.event.registry_package.package_version.manifest) }}
