@@ -1,0 +1,10 @@
+name: Trigger on registry_package
+
+on: [ registry_package ]
+
+jobs:
+  test-if:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo ${{ fromJSON(github.event.registry_package.package_version.manifest }}
