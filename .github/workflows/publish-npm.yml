@@ -1,6 +1,9 @@
 name: Publish NPM Package
 
-on: [push]
+on:
+  push:
+    paths:
+      - 'package.json'
 
 jobs:
   publish:
