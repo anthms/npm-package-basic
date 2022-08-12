@@ -6,5 +6,5 @@ jobs:
   test-if:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ toJSON(github.event.registry_package) }}
+#      - run: echo ${{ toJSON(github.event.registry_package) }}
       - run: echo ${{ toJSON(github.event.registry_package.package_version.manifest) }}
