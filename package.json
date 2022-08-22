@@ -1,9 +1,6 @@
 {
   "name": "@anthms/npm-package-basic",
   "version": "0.0.0",
-  "bin": {
-    "do-ops": "./op.js"
-  },
   "description": "",
   "main": "index.js",
   "scripts": {
