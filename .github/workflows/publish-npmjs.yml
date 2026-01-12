@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
-#     - run: npm install -g npm
+      - run: npm install -g npm # trusted publishing needs npm CLI >= v11.5.1
       - run: npm --version
       - run: npm install
       - run: npm publish --access public
